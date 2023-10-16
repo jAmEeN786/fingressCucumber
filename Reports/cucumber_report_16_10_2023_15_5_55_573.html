@@ -1,0 +1,2969 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cucumber Feature Report</title>
+  <link rel="icon" href="https://www.lambdatest.com/favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style type="text/css">
+    .panel-heading {
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .pull-right-lg {
+        float: left;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+.left {
+    float: left;
+}
+
+.metadata {
+    overflow: auto;
+    letter-spacing: 0.2px;
+    border-color: white;
+    line-height: 1.6;
+    color: #4d4d4d;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    padding-bottom: 3px;
+}
+
+.panel-heading a {
+    padding: 10px 15px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+.panel-heading i.glyphicon-chevron-down {
+    display: none;
+}
+
+.panel-heading i.glyphicon-chevron-right {
+    display: inline-block;
+}
+
+.panel-heading.open i.glyphicon-chevron-down {
+    display: inline-block;
+}
+
+.panel-heading.open i.glyphicon-chevron-right {
+    display: none;
+}
+
+.generated-on {
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+.panel-title b {
+    padding-right: 10px;
+}
+
+.panel-heading .label-container {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.panel-heading .label-container label {
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.navbar .label-container {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+}
+
+.navbar {
+    margin-bottom: 10px;
+}
+
+.navbar .label {
+    font-size: 20px;
+}
+
+.navbar .project-name {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tags {
+    margin-left: 18px;
+    margin-right: 20px;
+    padding-top: 5px;
+    margin-bottom: -4px;
+}
+
+.tag {
+    font-size: 13px;
+    color: #696969;
+    letter-spacing: 0.3px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+.chart {
+    padding-bottom: 15px;
+}
+
+div.chart div div svg rect {
+    fill: #f5f5f5;
+}
+
+.arguments {
+    margin-left: 30px;
+    margin-top: 1em;
+    margin-bottom: 15px;
+}
+
+#directory {
+    background-color: #f0f0f0;
+}
+
+.screenshot {
+    padding: 2% 0 2% 0;
+}
+
+.description {
+    background-color: white;
+    border-color: white;
+    line-height: 1.6;
+    color: #6f6f6f;
+    font-weight: 400;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding: 0.1em 0.5em 1.2em 1.5em
+}
+
+#scenario-description {
+    padding-bottom: 1em;
+    padding-left: 0.2em;
+}
+
+.scrollBar {
+    overflow-x: scroll;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f5f5f5;
+    color: black;
+}
+
+.info {
+    background-color: #fbfbfb;
+}
+
+pre {
+    display: block;
+    padding: 10px;
+    margin-top: 1em;
+    margin-right: 3em;
+    font-size: 13px;
+    line-height: 1.42857143;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.step-duration {
+    float: right;
+    color: #BDBDBD;
+}
+
+.footer-div {
+    text-align: right;
+    vertical-align: middle;
+    height: 3.5%;
+    width: 100%;
+}
+
+.footer-container {
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 18%;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.show-modal:hover {
+    background-color: #f0f0f0;
+}
+
+.footer-link {
+    font-size: 13px;
+    float: right;
+}
+
+.footer-link:hover {
+    color: darkgray;
+}
+
+.steps {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: -4px;
+}
+
+.all-features {
+    padding-top: 0.6em;
+}
+
+.keyword {
+    color: #616161;
+}
+
+.feature-passed {
+    display: block;
+}
+
+.feature-failed{
+    display: block;
+}
+
+.label-saffron{
+    background-color: #ff9933;
+}
+
+.label-retries {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90px;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.label-retries > span:first-child {
+    min-width: 100%;
+}
+
+.ellipsis {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all .2s linear;
+    white-space: nowrap;
+    padding:.5rem 1rem;
+}
+.ellipsis:focus, .ellipsis:hover {
+  color:transparent;
+}
+.ellipsis:focus:after,.ellipsis:hover:after{
+    content:attr(data-text);
+    overflow: visible;
+    text-overflow: inherit;
+    background: #fff;
+    position: absolute;
+    left:auto;
+    top:auto;
+    width: auto;
+    max-width: 100%;
+    border: 1px solid #eaebec;
+    padding: 0 .5rem;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.28);
+    white-space: normal;
+    word-wrap: break-word;
+    display:block;
+    color:black;
+    margin-top:-1.25rem;
+    z-index: 1;
+  }
+
+    /** Issue in google-charts tooltip - https://github.com/google/google-visualization-issues/issues/2162 */
+    .google-visualization-tooltip {
+      pointer-events: none;
+    }
+
+    .count-wrapper {
+      display: flex;
+      gap: 15px;
+    }
+
+    .card {
+      border: 1px solid #f5f5f5;
+      padding: 15px;
+      color: #fff;
+      border-radius: 5px;
+      flex: 1;
+    }
+
+    .generated-on {
+      margin-right: 10px;
+    }
+
+    .card h4 {
+      font-size: 15px;
+    }
+
+    .red-box {
+      background: #d9534e;
+    }
+
+    .blue-box {
+      background: #0074ff;
+    }
+
+    .yellow-box {
+      background: #f0ad4e;
+    }
+
+    .saffron-box {
+      background: #ff9933;
+    }
+
+    .green-box {
+      background: #5cb85b;
+    }
+
+    .gray-box {
+      background: #999;
+    }
+
+    .amb-box {
+      background: #218bcf;
+    }
+
+    .undefined-box {
+      background: #22c2e2;
+    }
+
+    .mb-20px {
+      margin-bottom: 20px;
+    }
+  </style>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        
+          <a class="navbar-brand">
+            demo test scenarios
+          </a>
+          <div class="project-name visible-md visible-lg">
+            cucumber-jam
+          </div>
+          <div class="label-container">
+            <div class="generated-on">
+              Mon Oct 16 2023 15:05:55 GMT+0530 (India Standard Time)
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="count-wrapper mb-20px">
+      <div class="card blue-box">
+        <div class="feature-title">
+          <h4>All Scenarios</h2>
+        </div>
+        <div class="feature-value">
+          <h5>
+            14
+          </h5>
+        </div>
+      </div>
+      <div class="card green-box">
+        <div class="feature-title">
+          <h4>Passed Scenarios</h2>
+        </div>
+        <div class="feature-value">
+          <h5>
+            14
+          </h5>
+        </div>
+      </div>
+      <div class="card red-box">
+        <div class="feature-title">
+          <h4>Failed Scenarios</h2>
+        </div>
+        <div class="feature-value">
+          <h5>
+            0
+          </h5>
+        </div>
+      </div>
+      
+          
+              
+                  
+                      
+    </div>
+    <div class="row">
+      <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
+      <div class="chart col-lg-6 col-md-6" id="piechart_scenarios"></div>
+    </div>
+
+    <div>
+      <p class="text-right">
+        <a id="expand_all">Expand All</a>
+        <span> | </span>
+        <a id="collapse_all">Collapse All</a>
+      </p>
+    </div>
+
+    
+      <div class="panel panel-default">
+        <div class="panel-heading open">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#logOutput">
+              <i class="glyphicon glyphicon-chevron-right"></i>
+              <i class="glyphicon glyphicon-chevron-down"></i>
+              <b>Metadata</b>
+            </a>
+          </h4>
+        </div>
+        <div id="logOutput" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <div class="row">
+              
+                
+                  
+                    
+                      <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class=pull-left>
+                          <strong>
+                            App Version:
+                          </strong>
+                          1.1.1
+                        </div>
+                      </div>
+                      
+                  
+                    
+                      <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class=pull-right-lg>
+                          <strong>
+                            Test Environment:
+                          </strong>
+                          QA
+                        </div>
+                      </div>
+                      
+                  
+                    
+                      <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class=pull-left>
+                          <strong>
+                            Platform:
+                          </strong>
+                          Web/Angular
+                        </div>
+                      </div>
+                      
+                  
+                    
+                      <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class=pull-right-lg>
+                          <strong>
+                            Sprint:
+                          </strong>
+                          001
+                        </div>
+                      </div>
+                      
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+        
+
+
+<div class="row" xmlns="http://www.w3.org/1999/html">
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <div class="tags">
+                    </div>
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecucumber_jam9ca684da-32cf-4f2c-ac6d-25c1617ac5ad">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>Components-->form elements-->selection
+                        <span class="label-container">
+              <span class="label label-success"
+                                                         title="14 Scenarios Passed">14</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecucumber_jam9ca684da-32cf-4f2c-ac6d-25c1617ac5ad" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    <div class="description">Feature Description:Check the list of dropdown functionalities</div>
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags"> <span class="tag"> @demo</span>
+                                    
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_jam94a38f0e-54c6-4736-a1a0-f8cb6b2b8329">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Select the single option">Select the single option</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_jam94a38f0e-54c6-4736-a1a0-f8cb6b2b8329"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> verify that select the desired option from &#39;select&#39; dropdown</span>
+                            
+                          
+                              <span class="step-duration">
+                               2s 236ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> select the option from list of available options</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 174ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> the chosen option must be selected</span>
+                            
+                          
+                              <span class="step-duration">
+                               20ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags"> <span class="tag"> @demo</span>
+                                    
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_jam70efb08f-51e3-429b-b09a-9a29f784c78c">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Deselect the chosen option">Deselect the chosen option</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_jam70efb08f-51e3-429b-b09a-9a29f784c78c"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> verify that deselect the desired option from &#39;select&#39; dropdown</span>
+                            
+                          
+                              <span class="step-duration">
+                               17ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> select the some other option</span>
+                            
+                          
+                              <span class="step-duration">
+                               281ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> the chosen option should be selected and previoulsy selected option must not be displayed</span>
+                            
+                          
+                              <span class="step-duration">
+                               26ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags"> <span class="tag"> @demo</span>
+                                    
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_jam8cf3c25e-1d49-4235-8845-2ac01debd57d">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Select the single option by searching keyword">Select the single option by searching keyword</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_jam8cf3c25e-1d49-4235-8845-2ac01debd57d"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> verify that select the desired option from &#39;select with search&#39; dropdown</span>
+                            
+                          
+                              <span class="step-duration">
+                               12ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> select the option by searching keyword from list of available options</span>
+                            
+                          
+                              <span class="step-duration">
+                               322ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> the selected option must be displayed</span>
+                            
+                          
+                              <span class="step-duration">
+                               13ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags"> <span class="tag"> @demo</span>
+                                    
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_jambb797145-d879-42f0-8fbf-e9cd70c66cc9">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Deselect the chosen option">Deselect the chosen option</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_jambb797145-d879-42f0-8fbf-e9cd70c66cc9"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> verify that deselect the desired option from &#39;select with search&#39; dropdown</span>
+                            
+                          
+                              <span class="step-duration">
+                               23ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> select the some other option by searching keyword</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 57ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> the chosen option should be displayed and previoulsy selected option must not be displayed</span>
+                            
+                          
+                              <span class="step-duration">
+                               30ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags"> <span class="tag"> @demo</span>
+                                    
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_jam7b963b9f-0f0e-4403-993b-1d21ba97b5c3">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Select the single option by search keyword/decoration">Select the single option by search keyword/decoration</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_jam7b963b9f-0f0e-4403-993b-1d21ba97b5c3"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> verify that select the option by search box and decoration</span>
+                            
+                          
+                              <span class="step-duration">
+                               25ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> select the option by searching decoration</span>
+                            
+                          
+                              <span class="step-duration">
+                               601ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> the chosen decoration option should be displayed</span>
+                            
+                          
+                              <span class="step-duration">
+                               28ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags"> <span class="tag"> @demo</span>
+                                    
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_jam8afd9afd-be39-4cb1-9750-710080734c2f">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="deselect the option by clicking (close)&#39;X&#39; option">deselect the option by clicking (close)'X' option</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_jam8afd9afd-be39-4cb1-9750-710080734c2f"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> verify empty option availability by clicking &#39;X&#39; option</span>
+                            
+                          
+                              <span class="step-duration">
+                               28ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> hitting the &#39;X&#39; option</span>
+                            
+                          
+                              <span class="step-duration">
+                               184ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> displayed option should be hided and dropdown should be empty</span>
+                            
+                          
+                              <span class="step-duration">
+                               23ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags"> <span class="tag"> @demo</span>
+                                    
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_jam9e8297e8-8884-401c-bcfb-a9d9ecc3085a">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="search the unavailable option">search the unavailable option</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_jam9e8297e8-8884-401c-bcfb-a9d9ecc3085a"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> verify whether the &#39;no items found&#39; option is displayed</span>
+                            
+                          
+                              <span class="step-duration">
+                               38ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> searching the keyword of unavailable option</span>
+                            
+                          
+                              <span class="step-duration">
+                               678ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> &#39;No matched items&#39; option must be visibled.</span>
+                            
+                          
+                              <span class="step-duration">
+                               24ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags"> <span class="tag"> @demo</span>
+                                    
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_jam1eb4f626-d6e9-46f1-b85a-60c4d3803bcd">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Select the desired list of checkbox">Select the desired list of checkbox</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_jam1eb4f626-d6e9-46f1-b85a-60c4d3803bcd"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> verify that multiple options can be selected by clicking checkbox</span>
+                            
+                          
+                              <span class="step-duration">
+                               30ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> select the specific options by clicking checkbox against desired option</span>
+                            
+                          
+                              <span class="step-duration">
+                               4s 312ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> the clicked options should be checked</span>
+                            
+                          
+                              <span class="step-duration">
+                               539ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags"> <span class="tag"> @demo</span>
+                                    
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_jamf8264ec4-7b22-4159-ad55-bfa42dda38e5">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="deselect the desired checkboxes">deselect the desired checkboxes</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_jamf8264ec4-7b22-4159-ad55-bfa42dda38e5"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> verify that chosen option can be deselected by clicking checkbox again</span>
+                            
+                          
+                              <span class="step-duration">
+                               457ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> deselect the specific options by clicking checkbox against desired option</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 12ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> the clicked options should be unchecked</span>
+                            
+                          
+                              <span class="step-duration">
+                               506ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags"> <span class="tag"> @demo</span>
+                                    
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_jam15e21c46-f126-414c-8de2-369ce7635018">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Select the business values">Select the business values</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_jam15e21c46-f126-414c-8de2-369ce7635018"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> verify that select the business value from dropdown</span>
+                            
+                          
+                              <span class="step-duration">
+                               33ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> select the  desired business value</span>
+                            
+                          
+                              <span class="step-duration">
+                               569ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> the selected business value must be displayed</span>
+                            
+                          
+                              <span class="step-duration">
+                               32ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags"> <span class="tag"> @demo</span>
+                                    
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_jam3d29d5ad-cb15-453e-9d04-21f828cf17bb">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Change the business value">Change the business value</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_jam3d29d5ad-cb15-453e-9d04-21f828cf17bb"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> verify whether the chosen business value can be changed</span>
+                            
+                          
+                              <span class="step-duration">
+                               23ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> change the desired business value</span>
+                            
+                          
+                              <span class="step-duration">
+                               590ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> the changed option should be displayed</span>
+                            
+                          
+                              <span class="step-duration">
+                               28ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags"> <span class="tag"> @demo</span>
+                                    
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_jamc878c19c-3903-4ed2-aa53-d6418da9ef9a">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Check the unavailable value">Check the unavailable value</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_jamc878c19c-3903-4ed2-aa53-d6418da9ef9a"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> verify whether the &#39;no matched items&#39; is displayed</span>
+                            
+                          
+                              <span class="step-duration">
+                               267ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> searching the keyword of unavailable business value</span>
+                            
+                          
+                              <span class="step-duration">
+                               110ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> &quot;No matched items&quot; should be displayed</span>
+                            
+                          
+                              <span class="step-duration">
+                               33ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags"> <span class="tag"> @demo</span>
+                                    
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_jam260ff9a7-8f05-44c5-9dda-b775041891fd">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Select the dependent value">Select the dependent value</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_jam260ff9a7-8f05-44c5-9dda-b775041891fd"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> verify that select the dependent value from dropdown</span>
+                            
+                          
+                              <span class="step-duration">
+                               18ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> select the desired dependent value</span>
+                            
+                          
+                              <span class="step-duration">
+                               3s 670ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> the selected dependent value should be displayed</span>
+                            
+                          
+                              <span class="step-duration">
+                               32ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags"> <span class="tag"> @demo</span>
+                                    
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_jam00bab316-0ae2-4a4c-a870-c16f5e201cd6">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Change the dependent value">Change the dependent value</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_jam00bab316-0ae2-4a4c-a870-c16f5e201cd6"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> verify whether the dependent value can be changed</span>
+                            
+                          
+                              <span class="step-duration">
+                               32ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> change the desired dependent value</span>
+                            
+                          
+                              <span class="step-duration">
+                               473ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> the changed value should be displayed</span>
+                            
+                          
+                              <span class="step-duration">
+                               48ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+
+
+          
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    google.load("visualization", "1", { packages: ["corechart"] });
+    google.setOnLoadCallback(function () {
+      drawChart({
+        "title": "Features",
+        "failed": 0,
+        "passed": 1,
+        "notdefined": 0,
+        "pending": 0,
+        "skipped": 0,
+        "ambiguous": 0
+                                                        })
+    });
+    google.setOnLoadCallback(function () {
+      drawChart({
+        "title": "Scenarios",
+        "failed": 0,
+        "passed": 14,
+        "rerun": 0,
+        "notdefined": 0,
+        "pending": 0,
+        "skipped": 0,
+        "ambiguous": 0
+                                                        })
+    });
+  </script>
+  <script>
+      $(document).ready(function () {
+  $('.collapse')
+    .on('hide.bs.collapse', function (e) {
+      e.stopPropagation();
+      $(this).prev().removeClass('open');
+    })
+    .on('show.bs.collapse', function (e) {
+      e.stopPropagation();
+      $(this).prev().addClass('open');
+    });
+
+  let $generated = $('.generated-on');
+
+  let timestamp = $generated.text();
+  $generated.text('Report generated ' + moment(timestamp).fromNow());
+  $generated.prop('title', new Date(timestamp).toISOString());
+});
+
+$(document).ready(function () {
+  const $collapsibleItems = $('[data-toggle="collapse"]');
+  const $collapseAllBtn = $('#collapse_all');
+  const $expandAllBtn = $('#expand_all');
+
+  const collapseAll = function () {
+    $collapsibleItems.each(function () {
+      $($(this).attr('href')).collapse('hide');
+    });
+  };
+
+  const expandAll = function () {
+    $collapsibleItems.each(function () {
+      $($(this).attr('href')).collapse('show');
+    });
+  };
+
+  $collapseAllBtn.on('click', collapseAll);
+  $expandAllBtn.on('click', expandAll);
+
+});
+
+function toggle(className) {
+  let x = $(className);
+  if (x.css('display') === 'none') {
+    x.css('display', 'block');
+  } else {
+    x.css('display', 'none');
+  }
+}
+
+      function drawChart(chartData) {
+  let data = google.visualization.arrayToDataTable([
+    ['Task', 'Cucumber Results'],
+    ['Passed', chartData.passed],
+    ['Failed', chartData.failed],
+    ['Pending', chartData.pending],
+    ['Undefined', chartData.notdefined],
+    ['Ambiguous', chartData.ambiguous],
+    ['Skipped', chartData.skipped],
+    ['Re-run', chartData.rerun],
+  ]);
+
+  let total =
+    chartData.passed +
+      chartData.failed +
+      (chartData.pending || 0) +
+      (chartData.notdefined || 0) +
+      (chartData.ambiguous || 0) +
+      (chartData.skipped || 0) ||
+    chartData.rerun ||
+    0;
+  let title;
+
+  if (total === 1) {
+    title = total + ' ' + chartData.title.slice(0, -1);
+  } else {
+    title = total + ' ' + chartData.title;
+  }
+
+  let options = {
+    width: '100%',
+    height: 240,
+    title: title,
+    is3D: true,
+    colors: ['#5cb85c', '#d9534f', '#999', '#5bc0de', '#428bca', '#f0ad4e', '#ff9933'],
+    fontSize: '13',
+    fontName: '"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif',
+    slices: {
+      1: { offset: 0.4 },
+      2: { offset: 0.4 },
+      3: { offset: 0.4 },
+      4: { offset: 0.4 },
+      5: { offset: 0.4 },
+      6: { offset: 0.4 },
+      7: { offset: 0.4 },
+    },
+    titleTextStyle: {
+      fontSize: '13',
+      color: '#5e5e5e',
+    },
+  };
+
+  let chart = new google.visualization.PieChart(document.getElementById('piechart_' + chartData.title.toLowerCase()));
+
+  chart.draw(data, options);
+}
+
+      $('a.toggle').on('click', function (e) {
+  e.preventDefault();
+
+  if (!$(this).hasClass('collapse')) {
+    if ($(this).text() === 'Screenshot -') {
+      // $(this).text('Screenshot +');
+      $(this).next('a.screenshot').find('img').hide();
+    } else if ($(this).text() === 'Screenshot +') {
+      // $(this).text('Screenshot -');
+      $(this).next('a.screenshot').find('img').show();
+    }
+  }
+
+  if ($(this).text().includes(' -')) {
+    $(this).text($(this).text().replace(' -', ' +'));
+  } else {
+    $(this).text($(this).text().replace(' +', ' -'));
+  }
+});
+
+  </script>
+</body>
+
+</html>

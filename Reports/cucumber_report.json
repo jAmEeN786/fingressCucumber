@@ -1,0 +1,1333 @@
+[
+  {
+    "description": "Feature Description:Check the list of dropdown functionalities",
+    "elements": [
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;select-the-single-option",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Select the single option",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "verify that select the desired option from 'select' dropdown",
+            "match": {
+              "location": "steps\\logical.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2463798600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "select the option from list of available options",
+            "match": {
+              "location": "steps\\logical.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 913488000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the chosen option must be selected",
+            "match": {
+              "location": "steps\\logical.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19179300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;deselect-the-chosen-option",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Deselect the chosen option",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "verify that deselect the desired option from 'select' dropdown",
+            "match": {
+              "location": "steps\\logical.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23250199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "select the some other option",
+            "match": {
+              "location": "steps\\logical.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 287867900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the chosen option should be selected and previoulsy selected option must not be displayed",
+            "match": {
+              "location": "steps\\logical.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14062799
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;select-the-single-option-by-searching-keyword",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Select the single option by searching keyword",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "verify that select the desired option from 'select with search' dropdown",
+            "match": {
+              "location": "steps\\logical.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20657299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "select the option by searching keyword from list of available options",
+            "match": {
+              "location": "steps\\logical.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 947992999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "the selected option must be displayed",
+            "match": {
+              "location": "steps\\logical.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37649700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 15
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;deselect-the-chosen-option",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Deselect the chosen option",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "verify that deselect the desired option from 'select with search' dropdown",
+            "match": {
+              "location": "steps\\logical.steps.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30166899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "select the some other option by searching keyword",
+            "match": {
+              "location": "steps\\logical.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 561849999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "the chosen option should be displayed and previoulsy selected option must not be displayed",
+            "match": {
+              "location": "steps\\logical.steps.ts:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28692699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 21
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;select-the-single-option-by-search-keyword/decoration",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Select the single option by search keyword/decoration",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "verify that select the option by search box and decoration",
+            "match": {
+              "location": "steps\\logical.steps.ts:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38881799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "select the option by searching decoration",
+            "match": {
+              "location": "steps\\logical.steps.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 641802100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "the chosen decoration option should be displayed",
+            "match": {
+              "location": "steps\\logical.steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28299899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 28
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;deselect-the-option-by-clicking-(close)'x'-option",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "deselect the option by clicking (close)'X' option",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "verify empty option availability by clicking 'X' option",
+            "match": {
+              "location": "steps\\logical.steps.ts:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38485700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "hitting the 'X' option",
+            "match": {
+              "location": "steps\\logical.steps.ts:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 179382000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "displayed option should be hided and dropdown should be empty",
+            "match": {
+              "location": "steps\\logical.steps.ts:87"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22830500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 34
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;search-the-unavailable-option",
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "search the unavailable option",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 42,
+            "name": "verify whether the 'no items found' option is displayed",
+            "match": {
+              "location": "steps\\logical.steps.ts:92"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36785999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
+            "name": "searching the keyword of unavailable option",
+            "match": {
+              "location": "steps\\logical.steps.ts:96"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 677333500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "'No matched items' option must be visibled.",
+            "match": {
+              "location": "steps\\logical.steps.ts:102"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20234099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 40
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;select-the-desired-list-of-checkbox",
+        "keyword": "Scenario",
+        "line": 47,
+        "name": "Select the desired list of checkbox",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 48,
+            "name": "verify that multiple options can be selected by clicking checkbox",
+            "match": {
+              "location": "steps\\logical.steps.ts:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30690500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 49,
+            "name": "select the specific options by clicking checkbox against desired option",
+            "match": {
+              "location": "steps\\logical.steps.ts:112"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2678927599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 50,
+            "name": "the clicked options should be checked",
+            "match": {
+              "location": "steps\\logical.steps.ts:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 527714200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 46
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;deselect-the-desired-checkboxes",
+        "keyword": "Scenario",
+        "line": 53,
+        "name": "deselect the desired checkboxes",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 54,
+            "name": "verify that chosen option can be deselected by clicking checkbox again",
+            "match": {
+              "location": "steps\\logical.steps.ts:128"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 465941900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 55,
+            "name": "deselect the specific options by clicking checkbox against desired option",
+            "match": {
+              "location": "steps\\logical.steps.ts:135"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1027274100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 56,
+            "name": "the clicked options should be unchecked",
+            "match": {
+              "location": "steps\\logical.steps.ts:141"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 506027300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 52
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;select-the-business-values",
+        "keyword": "Scenario",
+        "line": 59,
+        "name": "Select the business values",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 60,
+            "name": "verify that select the business value from dropdown",
+            "match": {
+              "location": "steps\\logical.steps.ts:152"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35530900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 61,
+            "name": "select the  desired business value",
+            "match": {
+              "location": "steps\\logical.steps.ts:156"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 555499899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 62,
+            "name": "the selected business value must be displayed",
+            "match": {
+              "location": "steps\\logical.steps.ts:161"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23075399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 58
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;change-the-business-value",
+        "keyword": "Scenario",
+        "line": 65,
+        "name": "Change the business value",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 66,
+            "name": "verify whether the chosen business value can be changed",
+            "match": {
+              "location": "steps\\logical.steps.ts:165"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28524500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 67,
+            "name": "change the desired business value",
+            "match": {
+              "location": "steps\\logical.steps.ts:169"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 565184799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 68,
+            "name": "the changed option should be displayed",
+            "match": {
+              "location": "steps\\logical.steps.ts:175"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30443400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 64
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;check-the-unavailable-value",
+        "keyword": "Scenario",
+        "line": 71,
+        "name": "Check the unavailable value",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 72,
+            "name": "verify whether the 'no matched items' is displayed",
+            "match": {
+              "location": "steps\\logical.steps.ts:179"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 263318400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 73,
+            "name": "searching the keyword of unavailable business value",
+            "match": {
+              "location": "steps\\logical.steps.ts:183"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 111649900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 74,
+            "name": "\"No matched items\" should be displayed",
+            "match": {
+              "location": "steps\\logical.steps.ts:187"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34751200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 70
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;select-the-dependent-value",
+        "keyword": "Scenario",
+        "line": 77,
+        "name": "Select the dependent value",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 78,
+            "name": "verify that select the dependent value from dropdown",
+            "match": {
+              "location": "steps\\logical.steps.ts:191"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18945800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 79,
+            "name": "select the desired dependent value",
+            "match": {
+              "location": "steps\\logical.steps.ts:195"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1964086499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 80,
+            "name": "the selected dependent value should be displayed",
+            "match": {
+              "location": "steps\\logical.steps.ts:199"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32039900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 76
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;change-the-dependent-value",
+        "keyword": "Scenario",
+        "line": 83,
+        "name": "Change the dependent value",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 84,
+            "name": "verify whether the dependent value can be changed",
+            "match": {
+              "location": "steps\\logical.steps.ts:203"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31661700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 85,
+            "name": "change the desired dependent value",
+            "match": {
+              "location": "steps\\logical.steps.ts:207"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 414879599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 86,
+            "name": "the changed value should be displayed",
+            "match": {
+              "location": "steps\\logical.steps.ts:211"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25569999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 82
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;select-the-url",
+        "keyword": "Scenario",
+        "line": 89,
+        "name": "Select the URL",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 90,
+            "name": "verify that select the desired URL from dropdown",
+            "match": {
+              "location": "steps\\logical.steps.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25398199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 91,
+            "name": "select the desired URL option",
+            "match": {
+              "location": "steps\\logical.steps.ts:220"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1791273099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 92,
+            "name": "the selected URL should be displayed",
+            "match": {
+              "location": "steps\\logical.steps.ts:225"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 591535600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 88
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;change-the-url",
+        "keyword": "Scenario",
+        "line": 95,
+        "name": "Change the URL",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 96,
+            "name": "verify whether the URL can be changed",
+            "match": {
+              "location": "steps\\logical.steps.ts:229"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 161717799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 97,
+            "name": "change the desired URL",
+            "match": {
+              "location": "steps\\logical.steps.ts:233"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1579852699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 98,
+            "name": "the changed URL should be displayed",
+            "match": {
+              "location": "steps\\logical.steps.ts:239"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64681599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 94
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;check-the-unavailable-value",
+        "keyword": "Scenario",
+        "line": 101,
+        "name": "Check the unavailable value",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 102,
+            "name": "verify whether the \"no matched items\" is displayed",
+            "match": {
+              "location": "steps\\logical.steps.ts:243"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 851537499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 103,
+            "name": "searching the keyword of unavailable URL",
+            "match": {
+              "location": "steps\\logical.steps.ts:247"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 218017599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 104,
+            "name": "'No matched items' should be displayed",
+            "match": {
+              "location": "steps\\logical.steps.ts:251"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30411199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 100
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;select-the-auto-populate-value",
+        "keyword": "Scenario",
+        "line": 107,
+        "name": "Select the auto populate value",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 108,
+            "name": "Verify that select the auto populate value from dropdown",
+            "match": {
+              "location": "steps\\logical.steps.ts:255"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19819400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 109,
+            "name": "select the desired auto populate option",
+            "match": {
+              "location": "steps\\logical.steps.ts:259"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2408893299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 110,
+            "name": "the selected auto populate option should be displayed",
+            "match": {
+              "location": "steps\\logical.steps.ts:263"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30087499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 106
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;change-the-auto-populate-value",
+        "keyword": "Scenario",
+        "line": 113,
+        "name": "Change the auto populate value",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 114,
+            "name": "whether the auto populate value can be changed",
+            "match": {
+              "location": "steps\\logical.steps.ts:267"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38207800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 115,
+            "name": "change the auto populate value",
+            "match": {
+              "location": "steps\\logical.steps.ts:271"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 661305200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 116,
+            "name": "the changed auto populate value must be displayed",
+            "match": {
+              "location": "steps\\logical.steps.ts:275"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28583400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 112
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;select-the-values-from-model-dropdown",
+        "keyword": "Scenario",
+        "line": 119,
+        "name": "Select the values from model dropdown",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 120,
+            "name": "verify that listed model value can be selected from dropdown",
+            "match": {
+              "location": "steps\\logical.steps.ts:280"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68266399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 121,
+            "name": "select the model values by searching keyword",
+            "match": {
+              "location": "steps\\logical.steps.ts:284"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 739342499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 122,
+            "name": "the specified keyword model values should be displayed and must can be selected",
+            "match": {
+              "location": "steps\\logical.steps.ts:289"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52777700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 118
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;change-the-selected-value",
+        "keyword": "Scenario",
+        "line": 125,
+        "name": "Change the selected value",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 126,
+            "name": "verify whether the model value can be changed",
+            "match": {
+              "location": "steps\\logical.steps.ts:293"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 553908299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 127,
+            "name": "change the model values by selecting some other values",
+            "match": {
+              "location": "steps\\logical.steps.ts:297"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56120500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 128,
+            "name": "the selected model value should be displayed",
+            "match": {
+              "location": "steps\\logical.steps.ts:302"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20854499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 124
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;move-the-options-under-'advanced-select'",
+        "keyword": "Scenario",
+        "line": 131,
+        "name": "Move the options under 'Advanced select'",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 132,
+            "name": "verify that selected desired option can be moved to other folder",
+            "match": {
+              "location": "steps\\logical.steps.ts:307"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33111800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 133,
+            "name": "select the desired options and then click move option",
+            "match": {
+              "location": "steps\\logical.steps.ts:311"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3607459699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 134,
+            "name": "the chosen option should be moved",
+            "match": {
+              "location": "steps\\logical.steps.ts:318"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22075900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 130
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;move-back-the-options-under-'advanced-select'",
+        "keyword": "Scenario",
+        "line": 137,
+        "name": "Move back the options under 'Advanced select'",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 138,
+            "name": "verify that selected desired option can be moved back to other folder",
+            "match": {
+              "location": "steps\\logical.steps.ts:322"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36592999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 139,
+            "name": "select desired options and then click move back option",
+            "match": {
+              "location": "steps\\logical.steps.ts:326"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 406619899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 140,
+            "name": "the chosen option should be moved back",
+            "match": {
+              "location": "steps\\logical.steps.ts:330"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 129909399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 136
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "components-->form-elements-->selection;change-the-priority-of-options",
+        "keyword": "Scenario",
+        "line": 143,
+        "name": "Change the priority of options",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 144,
+            "name": "verify that change the priority of the selected option",
+            "match": {
+              "location": "steps\\logical.steps.ts:334"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 444299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 145,
+            "name": "select the options and then click priority option",
+            "match": {
+              "location": "steps\\logical.steps.ts:337"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 469221099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 146,
+            "name": "the desired options should be rearranged",
+            "match": {
+              "location": "steps\\logical.steps.ts:341"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 409400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 142
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "components-->form-elements-->selection",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Components-->form elements-->selection",
+    "tags": [],
+    "uri": "features\\logical.feature"
+  }
+]
